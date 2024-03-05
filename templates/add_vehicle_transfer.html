@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Vehicle Transfer</title>
+    <!-- Include any CSS styling -->
+</head>
+
+<body>
+    <h1>Add Vehicle Transfer</h1>
+    <form action="{{ url_for('add_vehicle_transfer') }}" method="post">
+        <label for="vehicle_registration_number">Vehicle Registration Number:</label>
+        <input type="text" id="vehicle_registration_number" name="vehicle_registration_number" required><br><br>
+
+        <label for="search_code">Search Code:</label>
+        <input type="text" id="search_code" name="search_code" required><br><br>
+
+        <label for="notice_number">Notice Number:</label>
+        <input type="text" id="notice_number" name="notice_number" required><br><br>
+
+        <label for="current_owner_name">Current Owner Name:</label>
+        <input type="text" id="current_owner_name" name="current_owner_name" required><br><br>
+
+        <label for="new_owner_name">New Owner Name:</label>
+        <input type="text" id="new_owner_name" name="new_owner_name" required><br><br>
+
+        <label for="date_of_transfer">Date of Transfer:</label>
+        <input type="date" id="date_of_transfer" name="date_of_transfer" required><br><br>
+
+        <!-- Add any other fields you need -->
+
+        <button type="submit">Submit</button>
+    </form>
+</body>
+
+</html>
